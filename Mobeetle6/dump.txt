@@ -1,4 +1,4 @@
-# EXPERIMENTAL CONFIG dump
+# dump
 
 # version
 # Betaflight / CRAZYBEEF4SX1280 (HAMO) 4.3.0 Jun 14 2022 / 00:31:27 (229ac66) MSP API: 1.44
