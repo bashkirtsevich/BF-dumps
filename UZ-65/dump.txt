@@ -360,7 +360,7 @@ mode_color 6 10 0
 mode_color 7 0 3
 
 # aux
-aux 0 0 0 1300 2100 0 0
+aux 0 0 0 1600 2100 0 0
 aux 1 1 1 900 1300 0 0
 aux 2 35 3 1550 2100 0 0
 aux 3 0 0 900 900 0 0
@@ -818,11 +818,11 @@ set rate_6pos_switch = OFF
 set cpu_overclock = OFF
 set pwr_on_arm_grace = 5
 set scheduler_optimize_rate = ON
-set vtx_band = 3
-set vtx_channel = 2
+set vtx_band = 5
+set vtx_channel = 3
 set vtx_power = 5
-set vtx_low_power_disarm = ON
-set vtx_freq = 5685
+set vtx_low_power_disarm = UNTIL_FIRST_ARM
+set vtx_freq = 5732
 set vtx_pit_mode_freq = 0
 set vtx_halfduplex = ON
 set vcd_video_system = AUTO
