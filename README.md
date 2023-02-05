@@ -2,7 +2,10 @@
 Local betaflight dumps with version history.
 
 ## Partial
-* [OSD config for analog](analog-osd.txt)
+
+### Analog
+* [OSD config](analog-osd.txt)
+* [VTX table](vtx-table.txt)
 
 ## Dumps list
 * Mobula7
