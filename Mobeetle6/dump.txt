@@ -1,7 +1,7 @@
-# dump
+# EXPERIMENTAL CONFIG dump
 
 # version
-# Betaflight / CRAZYBEEF4SX1280 (HAMO) 4.3.0 May 18 2022 / 08:56:34 (norevision) MSP API: 1.44
+# Betaflight / CRAZYBEEF4SX1280 (HAMO) 4.3.0 Jun 14 2022 / 00:31:27 (229ac66) MSP API: 1.44
 
 # start the command batch
 batch start
@@ -919,7 +919,7 @@ set gyro_2_align_yaw = 0
 set mco2_on_pc9 = OFF
 set expresslrs_uid = 10,170,15,158,137,74
 set expresslrs_domain = ISM2400
-set expresslrs_rate_index = 1
+set expresslrs_rate_index = 0
 set expresslrs_switch_mode = WIDE
 set expresslrs_model_id = 255
 set scheduler_relax_rx = 1
@@ -988,19 +988,19 @@ set acro_trainer_angle_limit = 20
 set acro_trainer_lookahead_ms = 50
 set acro_trainer_debug_axis = ROLL
 set acro_trainer_gain = 75
-set p_pitch = 59
-set i_pitch = 100
-set d_pitch = 43
-set f_pitch = 137
+set p_pitch = 53
+set i_pitch = 90
+set d_pitch = 59
+set f_pitch = 124
 set p_roll = 56
 set i_roll = 95
-set d_roll = 42
+set d_roll = 58
 set f_roll = 132
 set p_yaw = 56
 set i_yaw = 95
 set d_yaw = 0
 set f_yaw = 132
-set angle_level_strength = 50
+set angle_level_strength = 38
 set horizon_level_strength = 50
 set horizon_transition = 75
 set level_limit = 55
@@ -1012,8 +1012,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_min_roll = 34
-set d_min_pitch = 35
+set d_min_roll = 58
+set d_min_pitch = 59
 set d_min_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 0
@@ -1050,9 +1050,9 @@ set simplified_pitch_pi_gain = 90
 set simplified_dterm_filter = ON
 set simplified_dterm_filter_multiplier = 120
 
-rateprofile 0
+rateprofile 1
 
-# rateprofile 0
+# rateprofile 1
 set rateprofile_name = -
 set thr_mid = 50
 set thr_expo = 0
