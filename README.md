@@ -1,9 +1,9 @@
-# Betaflight cli dumps
+# 🐝 Betaflight cli dumps
 Local betaflight dumps with version history.
 
 ## Partial
 
-### Analog
+### 📺 Analog
 * [OSD config](analog-osd.txt)
 * [VTX table](vtx-table.txt)
 
