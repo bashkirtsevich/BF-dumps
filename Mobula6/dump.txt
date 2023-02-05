@@ -1,7 +1,7 @@
-# dump
+dump
 
 # version
-# Betaflight / CRAZYBEEF4SX1280 (HAMO) 4.3.0 May 16 2022 / 09:18:25 (b2deec171) MSP API: 1.44
+# Betaflight / CRAZYBEEF4SX1280 (HAMO) 4.3.1 Sep 21 2022 / 16:06:58 (974484f) MSP API: 1.44
 
 # start the command batch
 batch start
@@ -764,7 +764,7 @@ set osd_flymode_pos = 2457
 set osd_anti_gravity_pos = 234
 set osd_g_force_pos = 234
 set osd_throttle_pos = 2425
-set osd_vtx_channel_pos = 2133
+set osd_vtx_channel_pos = 2305
 set osd_crosshairs_pos = 2253
 set osd_ah_sbar_pos = 206
 set osd_ah_pos = 78
@@ -798,12 +798,12 @@ set osd_nheading_pos = 234
 set osd_up_down_reference_pos = 205
 set osd_nvario_pos = 234
 set osd_esc_tmp_pos = 234
-set osd_esc_rpm_pos = 234
+set osd_esc_rpm_pos = 161
 set osd_esc_rpm_freq_pos = 234
 set osd_rtc_date_time_pos = 234
 set osd_adjustment_range_pos = 234
 set osd_flip_arrow_pos = 234
-set osd_core_temp_pos = 2114
+set osd_core_temp_pos = 2328
 set osd_log_status_pos = 234
 set osd_stick_overlay_left_pos = 234
 set osd_stick_overlay_right_pos = 234
