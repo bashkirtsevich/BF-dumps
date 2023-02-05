@@ -1,7 +1,7 @@
 # dump
 
 # version
-# Betaflight / CRAZYBEEF4SX1280 (HAMO) 4.3.1 Sep 21 2022 / 16:06:58 (974484f) MSP API: 1.44
+# Betaflight / CRAZYBEEF4SX1280 (HAMO) 4.3.1 Nov 12 2022 / 09:26:13 (norevision) MSP API: 1.44
 
 # start the command batch
 batch start
@@ -860,7 +860,7 @@ set pwr_on_arm_grace = 5
 set enable_stick_arming = OFF
 set vtx_band = 5
 set vtx_channel = 3
-set vtx_power = 5
+set vtx_power = 3
 set vtx_low_power_disarm = UNTIL_FIRST_ARM
 set vtx_softserial_alt = OFF
 set vtx_freq = 5732
@@ -924,6 +924,7 @@ set expresslrs_switch_mode = WIDE
 set expresslrs_model_id = 255
 set scheduler_relax_rx = 1
 set scheduler_relax_osd = 1
+set serialmsp_halfduplex = OFF
 set timezone_offset_minutes = 0
 set rpm_filter_harmonics = 3
 set rpm_filter_q = 500
@@ -988,18 +989,18 @@ set acro_trainer_angle_limit = 20
 set acro_trainer_lookahead_ms = 50
 set acro_trainer_debug_axis = ROLL
 set acro_trainer_gain = 75
-set p_pitch = 118
-set i_pitch = 135
-set d_pitch = 79
-set f_pitch = 212
-set p_roll = 125
-set i_roll = 143
-set d_roll = 82
-set f_roll = 226
-set p_yaw = 125
-set i_yaw = 143
+set p_pitch = 53
+set i_pitch = 90
+set d_pitch = 60
+set f_pitch = 124
+set p_roll = 56
+set i_roll = 95
+set d_roll = 59
+set f_roll = 132
+set p_yaw = 56
+set i_yaw = 95
 set d_yaw = 0
-set f_yaw = 226
+set f_yaw = 132
 set angle_level_strength = 38
 set horizon_level_strength = 50
 set horizon_transition = 75
@@ -1012,8 +1013,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_min_roll = 80
-set d_min_pitch = 77
+set d_min_roll = 59
+set d_min_pitch = 60
 set d_min_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 0
