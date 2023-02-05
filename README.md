@@ -1,12 +1,10 @@
 # Betaflight cli dumps
 Local betaflight dumps with version history.
 
-```
-find /path/to/dumps -type f -iname '*stock*.txt' -exec bash -c 'fname="{}"; dirname="$(basename "$(dirname "$fname")")"; basename="$(basename "$fname")"; mkdir -p $(pwd)/"$dirname"; cp "$fname" $(pwd)/"$dirname"/"$basename"; git add *; git commit -m "$basename";' \;
-find /path/to/dumps -type f -iname '*cli*.txt' -exec bash -c 'fname="{}"; dirname="$(basename "$(dirname "$fname")")"; basename="$(basename "$fname")"; mkdir -p $(pwd)/"$dirname"; cp "$fname" $(pwd)/"$dirname"/dump.txt; git add *; git commit -m "$basename";' \;
-```
+## Partial
+* [OSD config for analog](analog-osd.txt)
 
-# Dump list
+## Dumps list
 * Mobula7
 * Nazgul5 v2
 * Pavo25
@@ -19,3 +17,10 @@ find /path/to/dumps -type f -iname '*cli*.txt' -exec bash -c 'fname="{}"; dirnam
 * Foxwhoop 25
 * Mobeetle6
 * Mobula6
+
+## Git export
+```
+find /path/to/dumps -type f -iname '*stock*.txt' -exec bash -c 'fname="{}"; dirname="$(basename "$(dirname "$fname")")"; basename="$(basename "$fname")"; mkdir -p $(pwd)/"$dirname"; cp "$fname" $(pwd)/"$dirname"/"$basename"; git add *; git commit -m "$basename";' \;
+find /path/to/dumps -type f -iname '*cli*.txt' -exec bash -c 'fname="{}"; dirname="$(basename "$(dirname "$fname")")"; basename="$(basename "$fname")"; mkdir -p $(pwd)/"$dirname"; cp "$fname" $(pwd)/"$dirname"/dump.txt; git add *; git commit -m "$basename";' \;
+```
+
