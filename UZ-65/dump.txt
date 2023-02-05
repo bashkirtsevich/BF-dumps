@@ -212,7 +212,6 @@ feature -SOFTSPI
 feature -ESC_SENSOR
 feature -ANTI_GRAVITY
 feature -DYNAMIC_FILTER
-feature MOTOR_STOP
 feature OSD
 feature AIRMODE
 feature RX_SPI
@@ -468,9 +467,9 @@ rxfail 17 h
 set gyro_hardware_lpf = NORMAL
 set gyro_sync_denom = 2
 set gyro_lowpass_type = PT1
-set gyro_lowpass_hz = 100
+set gyro_lowpass_hz = 400
 set gyro_lowpass2_type = PT1
-set gyro_lowpass2_hz = 0
+set gyro_lowpass2_hz = 500
 set gyro_notch1_hz = 0
 set gyro_notch1_cutoff = 0
 set gyro_notch2_hz = 0
@@ -486,8 +485,8 @@ set dyn_notch_range = MEDIUM
 set dyn_notch_width_percent = 8
 set dyn_notch_q = 120
 set dyn_notch_min_hz = 100
-set dyn_lpf_gyro_min_hz = 100
-set dyn_lpf_gyro_max_hz = 300
+set dyn_lpf_gyro_min_hz = 400
+set dyn_lpf_gyro_max_hz = 1000
 set gyro_filter_debug_axis = ROLL
 set acc_hardware = AUTO
 set acc_lpf_hz = 10
@@ -893,12 +892,12 @@ profile 0
 
 # profile 0
 set profile_name = -
-set dyn_lpf_dterm_min_hz = 70
-set dyn_lpf_dterm_max_hz = 170
+set dyn_lpf_dterm_min_hz = 140
+set dyn_lpf_dterm_max_hz = 340
 set dterm_lowpass_type = PT1
-set dterm_lowpass_hz = 100
+set dterm_lowpass_hz = 200
 set dterm_lowpass2_type = PT1
-set dterm_lowpass2_hz = 150
+set dterm_lowpass2_hz = 300
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_pid_gain = ON
