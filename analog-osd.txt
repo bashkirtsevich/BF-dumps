@@ -1,3 +1,9 @@
+# adjrange
+adjrange 0 0 2 900 1200 29 2 0 0
+adjrange 1 0 2 1200 1800 29 2 0 0
+adjrange 2 0 2 1800 2100 29 2 0 0
+
+# OSD
 set osd_units = METRIC
 set osd_warn_arming_disable = ON
 set osd_warn_batt_not_full = OFF
@@ -31,28 +37,28 @@ set osd_ah_max_rol = 40
 set osd_ah_invert = OFF
 set osd_logo_on_arming = OFF
 set osd_logo_on_arming_duration = 5
-set osd_tim1 = 2560
-set osd_tim2 = 2561
+set osd_tim1 = 2592
+set osd_tim2 = 2593
 set osd_vbat_pos = 234
 set osd_rssi_pos = 314
-set osd_link_quality_pos = 2392
+set osd_link_quality_pos = 6520
 set osd_link_tx_power_pos = 234
-set osd_rssi_dbm_pos = 2360
-set osd_tim_1_pos = 234
-set osd_tim_2_pos = 2433
+set osd_rssi_dbm_pos = 2392
+set osd_tim_1_pos = 2443
+set osd_tim_2_pos = 6529
 set osd_remaining_time_estimate_pos = 234
-set osd_flymode_pos = 2457
+set osd_flymode_pos = 6553
 set osd_anti_gravity_pos = 234
 set osd_g_force_pos = 234
-set osd_throttle_pos = 2425
-set osd_vtx_channel_pos = 2305
-set osd_crosshairs_pos = 2253
+set osd_throttle_pos = 2360
+set osd_vtx_channel_pos = 2049
+set osd_crosshairs_pos = 6349
 set osd_ah_sbar_pos = 206
 set osd_ah_pos = 78
 set osd_current_pos = 2336
-set osd_mah_drawn_pos = 2368
+set osd_mah_drawn_pos = 6464
 set osd_motor_diag_pos = 234
-set osd_craft_name_pos = 2442
+set osd_craft_name_pos = 2058
 set osd_display_name_pos = 234
 set osd_gps_speed_pos = 234
 set osd_gps_lon_pos = 234
@@ -69,12 +75,12 @@ set osd_pid_yaw_pos = 234
 set osd_debug_pos = 234
 set osd_power_pos = 234
 set osd_pidrate_profile_pos = 234
-set osd_warnings_pos = 2345
-set osd_avg_cell_voltage_pos = 2401
+set osd_warnings_pos = 6441
+set osd_avg_cell_voltage_pos = 6497
 set osd_pit_ang_pos = 234
 set osd_rol_ang_pos = 234
 set osd_battery_usage_pos = 234
-set osd_disarmed_pos = 2314
+set osd_disarmed_pos = 6410
 set osd_nheading_pos = 234
 set osd_up_down_reference_pos = 205
 set osd_nvario_pos = 234
