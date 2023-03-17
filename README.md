@@ -20,6 +20,7 @@ Local betaflight dumps with version history.
 * Foxwhoop 25
 * Mobeetle6
 * Mobula6
+* HexNano
 
 ## Git export
 ```
