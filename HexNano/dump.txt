@@ -249,7 +249,6 @@ feature -ANTI_GRAVITY
 feature RX_SERIAL
 feature MOTOR_STOP
 feature TELEMETRY
-feature RSSI_ADC
 feature LED_STRIP
 feature OSD
 feature AIRMODE
@@ -842,10 +841,10 @@ set osd_anti_gravity_pos = 234
 set osd_g_force_pos = 234
 set osd_throttle_pos = 2360
 set osd_vtx_channel_pos = 1
-set osd_crosshairs_pos = 6381
+set osd_crosshairs_pos = 237
 set osd_ah_sbar_pos = 206
 set osd_ah_pos = 78
-set osd_current_pos = 2336
+set osd_current_pos = 6432
 set osd_mah_drawn_pos = 6464
 set osd_motor_diag_pos = 234
 set osd_craft_name_pos = 2059
