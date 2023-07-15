@@ -1,5 +1,3 @@
-Entering CLI Mode, type 'exit' to return, or 'help'
-
 # dump
 
 # version
@@ -203,9 +201,9 @@ feature ANTI_GRAVITY
 serial 20 1 115200 57600 0 115200
 serial 0 64 115200 57600 0 115200
 serial 1 0 115200 57600 0 115200
-serial 2 0 115200 57600 0 115200
+serial 2 131073 115200 57600 0 115200
 serial 3 0 115200 57600 0 115200
-serial 4 131073 115200 57600 0 115200
+serial 4 0 115200 57600 0 115200
 serial 5 0 115200 57600 0 115200
 
 # mixer
@@ -248,9 +246,9 @@ beacon -RX_SET
 map AETR1234
 
 # aux
-aux 0 0 0 1300 2100 0 0
+aux 0 0 0 1700 2100 0 0
 aux 1 1 1 900 1300 0 0
-aux 2 13 3 1700 2100 0 0
+aux 2 13 0 1300 1700 0 0
 aux 3 0 0 900 900 0 0
 aux 4 0 0 900 900 0 0
 aux 5 0 0 900 900 0 0
@@ -270,9 +268,9 @@ aux 18 0 0 900 900 0 0
 aux 19 0 0 900 900 0 0
 
 # adjrange
-adjrange 0 0 0 900 900 0 0 0 0
-adjrange 1 0 0 900 900 0 0 0 0
-adjrange 2 0 0 900 900 0 0 0 0
+adjrange 0 0 2 900 1200 29 2 0 0
+adjrange 1 0 2 1200 1800 29 2 0 0
+adjrange 2 0 2 1800 2100 29 2 0 0
 adjrange 3 0 0 900 900 0 0 0 0
 adjrange 4 0 0 900 900 0 0 0 0
 adjrange 5 0 0 900 900 0 0 0 0
@@ -394,7 +392,7 @@ set adc_vrefint_calibration = 0
 set adc_tempsensor_calibration30 = 0
 set adc_tempsensor_calibration110 = 0
 set blackbox_sample_rate = 1/4
-set blackbox_device = NONE
+set blackbox_device = SPIFLASH
 set blackbox_disable_pids = OFF
 set blackbox_disable_rc = OFF
 set blackbox_disable_setpoint = OFF
@@ -556,7 +554,7 @@ set telemetry_disabled_esc_temperature = ON
 set telemetry_disabled_temperature = OFF
 set telemetry_disabled_cap_used = ON
 set osd_units = METRIC
-set osd_warn_bitmask = 8191
+set osd_warn_bitmask = 32765
 set osd_rssi_alarm = 20
 set osd_link_quality_alarm = 80
 set osd_rssi_dbm_alarm = -60
@@ -574,29 +572,29 @@ set osd_ah_invert = OFF
 set osd_logo_on_arming = OFF
 set osd_logo_on_arming_duration = 5
 set osd_tim1 = 2560
-set osd_tim2 = 2561
-set osd_vbat_pos = 2433
-set osd_rssi_pos = 2395
-set osd_link_quality_pos = 246
+set osd_tim2 = 2593
+set osd_vbat_pos = 385
+set osd_rssi_pos = 7695
+set osd_link_quality_pos = 15855
 set osd_link_tx_power_pos = 234
 set osd_rssi_dbm_pos = 299
 set osd_rsnr_pos = 234
-set osd_tim_1_pos = 234
-set osd_tim_2_pos = 65
+set osd_tim_1_pos = 14890
+set osd_tim_2_pos = 2593
 set osd_remaining_time_estimate_pos = 234
-set osd_flymode_pos = 2446
+set osd_flymode_pos = 7727
 set osd_anti_gravity_pos = 234
 set osd_g_force_pos = 234
-set osd_throttle_pos = 97
+set osd_throttle_pos = 11727
 set osd_vtx_channel_pos = 53
 set osd_crosshairs_pos = 239
 set osd_ah_sbar_pos = 206
 set osd_ah_pos = 78
-set osd_current_pos = 2436
-set osd_mah_drawn_pos = 2433
+set osd_current_pos = 6593
+set osd_mah_drawn_pos = 6625
 set osd_wh_drawn_pos = 234
 set osd_motor_diag_pos = 234
-set osd_craft_name_pos = 2448
+set osd_craft_name_pos = 2048
 set osd_pilot_name_pos = 234
 set osd_gps_speed_pos = 342
 set osd_gps_lon_pos = 234
@@ -613,12 +611,12 @@ set osd_pid_yaw_pos = 234
 set osd_debug_pos = 234
 set osd_power_pos = 234
 set osd_pidrate_profile_pos = 234
-set osd_warnings_pos = 14666
-set osd_avg_cell_voltage_pos = 2401
+set osd_warnings_pos = 14773
+set osd_avg_cell_voltage_pos = 6657
 set osd_pit_ang_pos = 234
 set osd_rol_ang_pos = 234
 set osd_battery_usage_pos = 234
-set osd_disarmed_pos = 2368
+set osd_disarmed_pos = 6487
 set osd_nheading_pos = 234
 set osd_up_down_reference_pos = 205
 set osd_ready_mode_pos = 234
@@ -628,7 +626,7 @@ set osd_esc_rpm_freq_pos = 234
 set osd_rtc_date_time_pos = 234
 set osd_adjustment_range_pos = 234
 set osd_flip_arrow_pos = 234
-set osd_core_temp_pos = 102
+set osd_core_temp_pos = 3503
 set osd_log_status_pos = 234
 set osd_stick_overlay_left_pos = 234
 set osd_stick_overlay_right_pos = 234
@@ -652,13 +650,13 @@ set osd_sys_vtx_dvr_pos = 234
 set osd_sys_warnings_pos = 234
 set osd_sys_vtx_temp_pos = 234
 set osd_sys_fan_speed_pos = 234
-set osd_stat_bitmask = 14124
+set osd_stat_bitmask = 6054
 set osd_profile = 1
 set osd_profile_1_name = -
 set osd_profile_2_name = -
 set osd_profile_3_name = -
 set osd_gps_sats_show_hdop = OFF
-set osd_displayport_device = AUTO
+set osd_displayport_device = MSP
 set osd_rcchannels = -1,-1,-1,-1
 set osd_camera_frame_width = 24
 set osd_camera_frame_height = 11
@@ -668,11 +666,11 @@ set osd_menu_background = TRANSPARENT
 set osd_aux_channel = 1
 set osd_aux_scale = 200
 set osd_aux_symbol = 65
-set osd_canvas_width = 30
-set osd_canvas_height = 16
+set osd_canvas_width = 53
+set osd_canvas_height = 20
 set osd_craftname_msgs = OFF
 set task_statistics = ON
-set debug_mode = NONE
+set debug_mode = ACCELEROMETER
 set rate_6pos_switch = OFF
 set cpu_overclock = OFF
 set pwr_on_arm_grace = 5
