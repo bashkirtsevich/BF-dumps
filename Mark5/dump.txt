@@ -240,7 +240,7 @@ beeper RC_SMOOTHING_INIT_FAIL
 
 # beacon
 beacon -RX_LOST
-beacon -RX_SET
+beacon RX_SET
 
 # map
 map AETR1234
@@ -463,7 +463,7 @@ set ibatv_offset = 0
 set beeper_inversion = ON
 set beeper_od = OFF
 set beeper_frequency = 0
-set beeper_dshot_beacon_tone = 1
+set beeper_dshot_beacon_tone = 3
 set yaw_motors_reversed = ON
 set mixer_type = LEGACY
 set crashflip_motor_percent = 0
@@ -670,7 +670,7 @@ set osd_canvas_width = 53
 set osd_canvas_height = 20
 set osd_craftname_msgs = OFF
 set task_statistics = ON
-set debug_mode = ACCELEROMETER
+set debug_mode = GYRO_SCALED
 set rate_6pos_switch = OFF
 set cpu_overclock = OFF
 set pwr_on_arm_grace = 5
@@ -755,7 +755,7 @@ set dterm_lpf1_dyn_min_hz = 75
 set dterm_lpf1_dyn_max_hz = 150
 set dterm_lpf1_dyn_expo = 5
 set dterm_lpf1_type = PT1
-set dterm_lpf1_static_hz = 0
+set dterm_lpf1_static_hz = 75
 set dterm_lpf2_type = PT1
 set dterm_lpf2_static_hz = 150
 set dterm_notch_hz = 0
@@ -788,15 +788,15 @@ set yaw_lowpass_hz = 100
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
 set p_pitch = 47
-set i_pitch = 84
-set d_pitch = 46
+set i_pitch = 96
+set d_pitch = 55
 set f_pitch = 125
 set p_roll = 45
-set i_roll = 80
-set d_roll = 40
+set i_roll = 92
+set d_roll = 47
 set f_roll = 120
 set p_yaw = 45
-set i_yaw = 80
+set i_yaw = 92
 set d_yaw = 0
 set f_yaw = 120
 set angle_level_strength = 50
@@ -811,12 +811,12 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_min_roll = 30
-set d_min_pitch = 34
+set d_min_roll = 35
+set d_min_pitch = 40
 set d_min_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
-set motor_output_limit = 100
+set motor_output_limit = 90
 set auto_profile_cell_count = 0
 set launch_control_mode = NORMAL
 set launch_trigger_allow_reset = ON
@@ -827,7 +827,7 @@ set thrust_linear = 0
 set transient_throttle_limit = 0
 set feedforward_transition = 0
 set feedforward_averaging = OFF
-set feedforward_smooth_factor = 25
+set feedforward_smooth_factor = 60
 set feedforward_jitter_factor = 7
 set feedforward_boost = 15
 set feedforward_max_rate_limit = 90
@@ -839,8 +839,8 @@ set dyn_idle_max_increase = 150
 set level_race_mode = OFF
 set simplified_pids_mode = RPY
 set simplified_master_multiplier = 100
-set simplified_i_gain = 100
-set simplified_d_gain = 100
+set simplified_i_gain = 115
+set simplified_d_gain = 120
 set simplified_pi_gain = 100
 set simplified_dmax_gain = 100
 set simplified_feedforward_gain = 100
