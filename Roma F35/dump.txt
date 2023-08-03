@@ -248,7 +248,7 @@ map AETR1234
 # aux
 aux 0 0 0 1600 2100 0 0
 aux 1 1 1 900 1300 0 0
-aux 2 0 0 900 900 0 0
+aux 2 13 0 1350 1600 0 0
 aux 3 0 0 900 900 0 0
 aux 4 0 0 900 900 0 0
 aux 5 0 0 900 900 0 0
@@ -342,9 +342,9 @@ set gyro_overflow_detect = ALL
 set yaw_spin_recovery = AUTO
 set yaw_spin_threshold = 1950
 set gyro_to_use = FIRST
-set dyn_notch_count = 0
+set dyn_notch_count = 3
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 150
+set dyn_notch_min_hz = 140
 set dyn_notch_max_hz = 600
 set gyro_lpf1_dyn_min_hz = 275
 set gyro_lpf1_dyn_max_hz = 550
@@ -754,7 +754,7 @@ set profile_name = -
 set dterm_lpf1_dyn_min_hz = 75
 set dterm_lpf1_dyn_max_hz = 150
 set dterm_lpf1_dyn_expo = 5
-set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_type = PT1
 set dterm_lpf1_static_hz = 75
 set dterm_lpf2_type = PT1
 set dterm_lpf2_static_hz = 150
